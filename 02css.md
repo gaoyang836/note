@@ -100,7 +100,7 @@ h1{
     word-spacing:50px;
 }
 ...
-<h1> welcome to imooc!</h1>
+< h1 > welcome to imooc! < / h1>
 
 对齐
 h1{
