@@ -61,27 +61,27 @@ CSS样式从代码分区插入的形式可分：内联式，嵌入式，外部�
 ##文字排版
 
 字号、颜色
-body{font-size:12px;color:#666}
+body { font-size:12px;color:#666}
 
 粗体
-p span{font-weight:bold;}
+p span { font-weight:bold;}
 
 斜体
-p a{font-style:italic;}
+p a{ font-style:italic;}
 
 下划线
-p a{text-decoration:underline;}
+p a{ text-decoration:underline;}
 
 删除线
-.oldPrice{text-decoration:line-through;}
+.oldPrice { text-decoration:line-through;}
 
 ##段落排版
 
 缩进     
-p{text-indent:2em;}
+p { text-indent:2em;}
 
 行间距（行高）
-p{line-height:1.5em;}
+p { line-height:1.5em;}
 
 中文字间距、字母间距
 
@@ -91,7 +91,7 @@ h1{
     letter-spacing:50px;
 }
 ...
-<h1>了不起的盖茨比</h1>
+< h 1> 了不起的盖茨比 < / h1>
 注意：这个样式使用在英文单词时，是设置字母与字母之间的间距。
 
 单词间距设置：
@@ -100,15 +100,15 @@ h1{
     word-spacing:50px;
 }
 ...
-<h1>welcome to imooc!</h1>
+<h1> welcome to imooc!</h1>
 
 对齐
 h1{
     text-align:center/left/right;
 }
-<h1>了不起的盖茨比</h1>
+< h1> 了不起的盖茨比</h1>
 
-##元素分类
+##元素分类 
 常用的块状元素有：
 
 < div>、< p>、< h1>...< h6>、< ol>、< ul>、< dl>、< table>、< address>、< blockquote> 、< form>
