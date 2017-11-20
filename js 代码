@@ -1,1 +1,14 @@
+1.
+var a = null;
+function b() {return "B";}
+(a||b)();
 
+"B"
+
+2.
+function createFunction() {
+  var local = 100;
+  return function(){return local;};
+  createFunction()()
+  
+100
