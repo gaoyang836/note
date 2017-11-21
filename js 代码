@@ -23,3 +23,21 @@ function power (base,exponent){
 power (2,3)
 
 8
+
+4.
+//访问 length 属性
+
+text = "purple haze";	
+text.length;
+
+11
+
+text = "purple haze";	
+text["length"];
+
+11
+
+text = "12334";	
+text.length;
+
+5
