@@ -25,7 +25,7 @@ power (2,3)
 8
 
 4.
-//访问 length 属性
+// 访问 length 属性
 
 text = "purple haze";	
 text.length;
@@ -41,3 +41,44 @@ text = "12334";
 text.length;
 
 5
+
+5.
+// 编写一个对象
+var cat = {color:"gray",name:"spot",size:46};
+cat.size = 47;
+cat.size;
+
+47
+
+delete cat.size;
+cat.size;
+
+undefined
+
+6.
+// 给对象添加一个新属性
+var empty = {};
+empty.notReally = 1000;
+empty;
+
+{notReally: 1000}
+
+7.
+var propertyName = "length";
+text = "coco";
+text [propertyName];
+
+4
+
+8.
+var chineseBox = {};
+chineseBox.content = chineseBox;
+"content"in chineseBox;
+
+true
+
+"content"in chineseBox.content;
+
+true
+
+
