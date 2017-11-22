@@ -82,4 +82,29 @@ chineseBox.content = chineseBox;
 
 //true
 
+9.
+//方法
+var mack = [];
+mack.push("Mack");
+mack.push("the");
+mack.push("knife");
+mack;
+//(3) ["Mack", "the", "knife"]
 
+mack.join("");
+//"Macktheknife"
+
+mack.join();
+//"Mack,the,knife"
+
+//mack.join( );
+"Mack,the,knife"
+
+mack.pop();
+//"knife"
+
+mack;
+//(2) ["Mack", "the"]
+
+mack.join(" ");
+//"Mack the"
