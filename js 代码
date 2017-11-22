@@ -3,7 +3,7 @@ var a = null;
 function b() {return "B";}
 (a||b)();
 
-"B"
+//"B"
 
 2.
 function createFunction() {
@@ -11,7 +11,7 @@ function createFunction() {
   return function(){return local;};
   createFunction()()
   
-100
+//100
 
 3.
 function power (base,exponent){
@@ -22,7 +22,7 @@ function power (base,exponent){
 }
 power (2,3)
 
-8
+//8
 
 4.
 // 访问 length 属性
@@ -30,17 +30,17 @@ power (2,3)
 text = "purple haze";	
 text.length;
 
-11
+//11
 
 text = "purple haze";	
 text["length"];
 
-11
+//11
 
 text = "12334";	
 text.length;
 
-5
+//5
 
 5.
 // 编写一个对象
@@ -48,12 +48,12 @@ var cat = {color:"gray",name:"spot",size:46};
 cat.size = 47;
 cat.size;
 
-47
+//47
 
 delete cat.size;
 cat.size;
 
-undefined
+//undefined
 
 6.
 // 给对象添加一个新属性
@@ -61,24 +61,25 @@ var empty = {};
 empty.notReally = 1000;
 empty;
 
-{notReally: 1000}
+//{notReally: 1000}
 
 7.
 var propertyName = "length";
 text = "coco";
 text [propertyName];
 
-4
+//4
 
 8.
+//对象的嵌套
 var chineseBox = {};
 chineseBox.content = chineseBox;
 "content"in chineseBox;
 
-true
+//true
 
 "content"in chineseBox.content;
 
-true
+//true
 
 
