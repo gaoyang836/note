@@ -113,3 +113,13 @@ paragraph.slice(0,4) == "born";
 
 paragraph.slice(0,3) == "born";
 //false
+
+12.
+function startWith(string,pattern){
+  return string.slice(0,pattern.length)  == pattern;
+}
+undefined
+startWith("rotation","rot");
+//true
+startWith("rot","rotation");
+//false
