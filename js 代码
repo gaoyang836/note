@@ -2,7 +2,6 @@
 var a = null;
 function b() {return "B";}
 (a||b)();
-
 //"B"
 
 2.
@@ -10,7 +9,6 @@ function createFunction() {
   var local = 100;
   return function(){return local;};
   createFunction()()
-  
 //100
 
 3.
@@ -21,25 +19,20 @@ function power (base,exponent){
     return base * power(base,exponent - 1);
 }
 power (2,3)
-
 //8
 
 4.
 // 访问 length 属性
-
 text = "purple haze";	
 text.length;
-
 //11
 
 text = "purple haze";	
 text["length"];
-
 //11
 
 text = "12334";	
 text.length;
-
 //5
 
 5.
@@ -47,12 +40,10 @@ text.length;
 var cat = {color:"gray",name:"spot",size:46};
 cat.size = 47;
 cat.size;
-
 //47
 
 delete cat.size;
 cat.size;
-
 //undefined
 
 6.
@@ -60,14 +51,12 @@ cat.size;
 var empty = {};
 empty.notReally = 1000;
 empty;
-
 //{notReally: 1000}
 
 7.
 var propertyName = "length";
 text = "coco";
 text [propertyName];
-
 //4
 
 8.
@@ -75,11 +64,9 @@ text [propertyName];
 var chineseBox = {};
 chineseBox.content = chineseBox;
 "content"in chineseBox;
-
 //true
 
 "content"in chineseBox.content;
-
 //true
 
 9.
@@ -113,5 +100,16 @@ mack.join(" ");
 //split用法
 var words = "cities of the interior";
 words.split(" ");
-
 //(4) ["cities", "of", "the", "interior"]
+
+11.
+//判断一个字符串是否以 born 开头
+var paragraph = "born 15-11-2003 (mother spot):white fang";
+paragraph.charAt(0) == "b" && paragraph.charAt(1) == "o" &&paragraph.charAt(2) == "r" && paragraph.charAt(3) == "n";
+//true
+
+paragraph.slice(0,4) == "born";
+//true
+
+paragraph.slice(0,3) == "born";
+//false
