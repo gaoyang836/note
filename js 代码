@@ -108,3 +108,10 @@ mack;
 
 mack.join(" ");
 //"Mack the"
+
+10.
+//split用法
+var words = "cities of the interior";
+words.split(" ");
+
+//(4) ["cities", "of", "the", "interior"]
