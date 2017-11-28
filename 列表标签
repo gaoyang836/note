@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>audio</title>
+</head>
+<body>
+   <input placeholder="请选择您喜欢的手机品牌" list="phonelist"/>
+   <datalist id="phonelist">
+     <option value="iphone">iphone</option>
+     <option value="oppo">oppo</option>
+     <option value="htc">htc</option>
+     <option value="sansung">sansung</option>
+     <option value="meizu">meizu</option>
+ </datalist>
+ <details open="open">
+ <summary>鸡汤</summary>
+  <p>鸡汤是一道传统的汤菜，制作原料主要有鸡、水、调料等。鸡汤特别是老母鸡汤向来以美味著称，鸡汤还可以起到缓解感冒症状，提高人体的免疫功能的作用。</p>
+  <p>鸡的营养物质大部分为蛋白质和脂肪，吃多了会导致身体肥胖。鸡肉中欠缺钙、铁、胡萝卜素、硫胺素、核黄素、尼克酸以及各种维生素和粗纤维，长期食用易导致身体亚健康。</p>
+ </details>
+</body>
+</html>
