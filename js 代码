@@ -123,3 +123,20 @@ startWith("rotation","rot");
 //true
 startWith("rot","rotation");
 //false
+13.
+//提取文字
+function catNames(paragraph){
+var colon = paragraph.indexOf(":");
+return colon;
+}
+//undefined
+catNames("born 20/09/2004 (mother Yellow Bess):doctor hobbles the 2nd, noog");
+//36
+
+function catNames(paragraph){
+var colon = paragraph.indexOf(":");
+return paragraph.slice(colon+2).split(", ");
+}
+//undefined
+catNames("born 20/09/2004 (mother Yellow Bess):doctor hobbles the 2nd, noog");
+//(2) ["octor hobbles the 2nd", "noog"]
