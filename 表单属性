@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+ </head>
+ <body>
+   <form action="biaodanshuxing.html" autocomplete="on">
+     <imput type="text" name="text" autocomplete="off">
+     <imput type="text" name="text" 
+     input type="text" name="text" placeholder="您好，请在这里输入您的用户名">
+     input type="text" name="text" required="required">
+     <imput type="password" name="password" antofocus="antofocus">
+     <imput type="submit">
+<input type="file" multiple="mutiple">
+ </body>
+ </html>
