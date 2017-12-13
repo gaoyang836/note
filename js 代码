@@ -140,3 +140,32 @@ return paragraph.slice(colon+2).split(", ");
 //undefined
 catNames("born 20/09/2004 (mother Yellow Bess):doctor hobbles the 2nd, noog");
 //(2) ["octor hobbles the 2nd", "noog"]
+
+14.
+var url="http://baidu.com/index.txt";
+	function getFileFormat(url){
+		//获取.在url中出现的位置
+		var pos=url.lastIndexOf(".");
+		return url.substr(pos);
+	}
+	var  formatName=getFileFormat(url);
+	console.log(formatName);
+	var picFormat=getFileFormat("1231435.jpg");
+	console.log(picFormat);
+// .txt
+// .jpg
+
+undefined
+var url="http://baidu.com/index.txt";
+	function getFileFormat(url){
+		//获取.在url中出现的位置
+		var pos=url.lastIndexOf(".");
+		return url.substr(pos+1);
+	}
+	var  formatName=getFileFormat(url);
+	console.log(formatName);
+	var picFormat=getFileFormat("1231435.jpg");
+	console.log(picFormat);
+// txt
+// jpg
+
