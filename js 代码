@@ -191,3 +191,19 @@ function camelback(str){
 	}
              var camelFormat=camelback("border-left-color");
 //borderLeftColor
+
+17.
+var today=new Date();
+ //第一种做法
+ today.setDate(today.getDate()+50);
+ console.log(today.getDay());
+ //4
+ 
+//第二种做法
+var weeks=["日","一","二","三","四","五","六"]；
+ var year=today.getFullYear();
+ var month=today.getMonth();
+ var day=today.getDate();
+//创建一个日期目标对象
+ var temp=new Date(year,month,day+50,0,0,0);
+console.log("50天后的今天是："+temp.getFullYear()+'-'+(temp.getMonth()+1)+'-'+temp.getDate()+'-'+'星期'+weeks[temp.getDay()]);
