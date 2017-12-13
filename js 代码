@@ -169,3 +169,9 @@ var url="http://baidu.com/index.txt";
 // txt
 // jpg
 
+15.
+var str='welcome-to-beijing';
+//使用split讲str转化为数组
+var arr=str.split("-");
+console.log(arr);
+VM144:4 (3) ["welcome", "to", "beijing"]
