@@ -218,3 +218,16 @@ window.sayName=function(){
 }
 sayAge();
 window.sayName();
+
+19.
+//检测浏览器类型
+ function getBrowser(){
+       //获取 userAgent 属性
+       var explorer = navigator.userAgent.toLowerCase ();
+       return explorer;
+  }
+  var explorer = getBrowser();
+  console.log(explorer);
+  
+//  VM37:9 mozilla/5.0 (linux; android 6.0; nexus 5 build/mra58n) 
+applewebkit/537.36(khtml, like gecko) chrome/63.0.3239.84 mobile safari/537.36
