@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script >
+	var url="http://baidu.com/index.txt";
+	function getFileFormat(url){
+		//获取.在url中出现的位置
+		var pos=url.lastIndexOf(".");
+		return url.substr(pos);
+	}
+	var  formatName=getFileFormat(url);
+	console.log(formatName);
+	var picFormat=getFileFormat("1231435.jpg");
+	console.log(picFormat);
+// .txt
+// .jpg
+
+var url="http://baidu.com/index.txt";
+	function getFileFormat(url){
+		//获取.在url中出现的位置
+		var pos=url.lastIndexOf(".");
+		return url.substr(pos+1);
+	}
+	var  formatName=getFileFormat(url);
+	console.log(formatName);
+	var picFormat=getFileFormat("1231435.jpg");
+	console.log(picFormat);
+// txt
+// jpg
+	</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style >
+	.text span{font-weight: bold;color: #f00;}
+	em{font-style: normal;}
+
+	</style>
+</head>
+<body>
+	<div>
+	     <p class="text">您还可以输入<span><em id="count">30</em>/30</span></p>
+                   <div class="input"> 
+                        <textarea name="" id="text" cols="70"  rows="4"></textarea>
+                    </div>  
+	</div>
+	<script >
+	     //获取文本框
+	     var text=document.getElementById("text");
+	     var total=30;
+	     var count=document.getElementById("count");
+	    //绑定键盘事件
+	    document.onkeyup=function(){
+	    	//获取文本框值的长度
+	    	var len=text.value.length;
+	    	var allow=total-len;
+	    	count.innerHTML=allow;
+	    }
+	</script>
+</body>
+</html>

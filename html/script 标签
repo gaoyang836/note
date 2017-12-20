@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+ </head>
+ <body>
+   <script type="text/javascipt">
+   document.write("www.imooc.com")
+     document.write(br)
+   </script>
+   
+   <script type="text/javascipt" src="lessond4-1.js"></script>
+
+
+ </body>
+ </html>
